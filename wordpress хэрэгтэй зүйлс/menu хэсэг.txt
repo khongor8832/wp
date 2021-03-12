@@ -1,0 +1,23 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+
+.menu ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}

@@ -1,0 +1,45 @@
+body {
+  color: #333;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  padding: 10px 0px;
+}
+.header .logo {
+  background-color: #fff;
+}
+.header .logo img {
+  width: 350px;
+}
+.header .menu {
+  margin-top: 25px;
+}
+.header .menu li {
+  display: inline-block;
+}
+.header .menu li a {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  padding: 2px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.slider {
+}
+.slider img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}

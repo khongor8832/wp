@@ -1,0 +1,22 @@
+function ороод ctrl+f дарж байгаад primary хайх 
+Манай сайт дээр 2 menu хэрэгтэй учир нэг Menuг устгана. 
+
+// This theme uses wp_nav_menu() in two locations.
+		register_nav_menus(
+			array(
+				'menu-1' => __( 'Primary', 'twentynineteen' ),
+				'footer' => __( 'Footer Menu', 'twentynineteen' ),
+				
+			)
+		);
+
+----------------------------------------------
+Үндсэн menu дээр гаргаж өгөхдөө 
+*******************************
+wordpress template эхлээд menu хэсгийг хийнэ.  
+ul menu хэсгийг энэ кодоор сольсоноор template доторх dynamic menu болно. 
+<?php wp_nav_menu( array( "theme_location" => "primary","container" => false, "items_wrap" => "%35s" ) ); ?>
+
+primary гэдэг үгийг menu-1 сольж өгнө. 
+
+10.55 зогслооо 

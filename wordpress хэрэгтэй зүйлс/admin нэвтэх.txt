@@ -1,0 +1,4 @@
+http://localhost/site/wp-login.php
+
+
+http://localhost/site/wp-login.php?redirect_to=http%3A%2F%2Flocalhost%2Fsite%2Fwp-admin%2Fthemes.php&reauth=1

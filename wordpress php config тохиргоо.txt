@@ -1,0 +1,39 @@
+﻿Давталт эхлэх
+<?php 
+    query_posts('cat=3&posts_per_page=4');
+    if (have_posts()) :
+    while (have_posts()) : the_post();
+?>
+<?php
+    $thumb_id = get_post_thumbnail_id();
+    $thumb_url = wp_get_attachment_image_src($thumb_id, 'full', true);
+?>
+
+зурагны url 
+<?php echo $thumb_url[0] ?>
+
+мэдээний гарчиг
+ <?php the_title(); ?>
+
+мэдээний текст
+<p>
+   <?php 
+      $content = get_the_content();
+      $content = strip_tags($content);
+      echo mb_substr($content, 0, 200). '...';
+   ?>
+</p>
+
+дэлгэрэнгүй линк
+<?php the_permalink() ?>
+
+он сар өдөр 
+<?php echo get_the_date();?>
+
+Давталт дуусах
+<?php 
+      endwhile;
+      endif;
+      wp_reset_query();
+?>
+

@@ -3,6 +3,9 @@
 
 
 style.css
+****************
+
+
 /*
 Template name: Site
 Author: Khongor
@@ -10,7 +13,10 @@ version: 1.2
 description: Site template
 */
 ----------------------------------------------------------------
+
 header.php
+****************
+
 
 <?php?><!doctype html>
 <html <?php language_attributes(); ?>>
@@ -22,8 +28,11 @@ header.php
 </head>
 
 <body <?php body_class(); ?>>
+
 --------------------------------------------------------------
+
 index.css 
+***************
 
 <?php get_header(); ?>
 
@@ -33,7 +42,9 @@ index.css
 get_footer();
 
 -------------------------------------------------------------
+
 footer.css
+****************
 
 <?php ?>
 

@@ -21,10 +21,12 @@ a:hover {
   height: 1640px;
   margin-top: 10px;
   padding-top: 20px;
+  overflow-y: scroll;
 }
 .branch .headerTop {
   height: 80px;
 }
+
 .logo img {
   height: 80px;
   width: 100%;
@@ -157,19 +159,17 @@ h6 a {
 }
 .title {
   font-family: "Roboto Condensed", sans-serif;
-  box-sizing: border-box;
   background-color: #0066bf;
   color: #fff;
   margin: 20px 0px 0px 0;
-  // padding: 5px;
   font-size: 18px;
   width: 150px;
-  border-bottom: 2px solid #0066bf;
   text-align: center;
 }
 .title1 {
   border-bottom: 3px solid #0066bf;
   margin: 0px 0px 20px 0;
+  margin-top: -1px;
 }
 
 .n3-image {
@@ -222,8 +222,25 @@ h6 a {
 }
 
 .popularNewsContainer {
-  margin: 40px 0px;
+  margin: 30px 0px;
 }
+.popularNewsTitleContainer {
+  background-color: #f4f4f4;
+  margin: 2px 12px;
+}
+.newNewsTitle {
+  // padding-top: 7px;
+  text-align: center;
+  color: #f3f3f3;
+  background-color: #0066bf;
+  font-size: 18px;
+  height: 30px;
+}
+.newNewsContainer {
+  border: solid 2px #0066bf;
+  padding: 10px;
+}
+
 // .caption4 {
 //   position: absolute;
 //   background-color: rgba(0, 0, 0, 0.7);
@@ -255,9 +272,6 @@ h6 a {
 // **********************************Сайтын мэдээ энд төгсөж байна. ***********************************
 // **********************************Их мэдээ энд эхэлж байна. ****************************************
 
-// .popularNewsContainer {
-//   background-color: red;
-// }
 .n1-1-image img {
   width: 100%;
   height: 150px;
@@ -300,12 +314,13 @@ h6 a {
   background-color: #1b9bff;
 }
 .footer {
-  padding: 10px;
+  padding-top: 10px;
   font-family: "Roboto Condensed";
   background-color: #21295f;
   color: white;
   text-align: center;
   height: 100px;
+  margin-left: 10px;
 }
 .fa .fa-envelope {
   height: 200px;

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- roboto condenced -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Swiper -ын css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-awesome -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- font-awesome cdn  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- font awsome Computer-ээс дуудах  -->
+    <!-- <link href="fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet"> -->
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- container эхлэх хэсэг шүү -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-2 ">
+                <div class="branch">
+                    Салбарууд
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-10">
+                <div class="main">
+                    <!-- ------------------header хэсэг эхэлж байна. ----------------------------------- -->
+                    <div class="header">
+                        <div class=".container">
+                            <div class="row headerTop">
+                                <!-- **************logo хэсэг эхэлж байна.************************** -->
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="logo">
+                                        <a href="#">
+                                            <img src="image/unuudur_logo_20190611104702.jpg"> </a>
+                                    </div>
+                                </div>
+                                <!-- *************logo хэсэг төгсгөл.********************** -->
+                                <!-- *************search хэсэг эхэлж байна.********************* -->
+                                <div class=" col-md-5 col-sm-5">
+                                    <div class="search">
+                                        <div class="searchFrom">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                            <input type="text" name="" placeholder="">
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <!-- ************* search хэсэг төгсгөл байна.********************* -->
+                                <!-- ************* weather хэсэг эхэлж байна.********************* -->
+                                <div class=" col-md-2 col-sm-2">
+                                    <div class="exchange">
+                                        <a class="hansh" href="http://127.0.0.1:5500/index.html">
+                                            <p>Доллар (USD)</p>
+                                            <span class="up">
+                                                <img alt="USD - Доллар" src="image/USD.png">
+                                                2,849.96
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- ************* weather хэсэг төгсөж байна.********************* -->
+                                <!-- ************* exchange хэсэг эхэлж байна.********************* -->
+                                <div class=" col-md-2 col-sm-2">
+                                    <div class="weather">
+                                        <a class="tsag-agaar" href="http://127.0.0.1:5500/index.html">
+                                            <p>
+                                                Улаанбаатар
+                                            </p>
+                                            <img alt="Цаг агаар" src="image/weather1.png">
+                                            <span>
+                                                -1℃
+                                            </span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <!-- ************* exchange хэсэг төгсөж байна.********************* -->
+
+                            </div>
+                            <!-- header-ын .container row div төгссөн хэсэг -->
+                        </div>
+                        <!-- header-ын .container div төгссөн хэсэг -->
+                    </div>
+                    <!-- header div төгссөн хэсэг -->
+
+                    <!-- ************* menu хэсэг эхэлж байна.********************* -->
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Нүүр</a></li>
+                            <li><a href="#">Бидний тухай</a></li>
+                            <li><a href="#">Мэдээ, мэдээлэл</a></li>
+                            <li><a href="#">Холбоо барих</a></li>
+                            <li><a href="#">Хэрэглэгчийн булан</a></li>
+                        </ul>
+                    </div>
+                    <!-- ************* menu хэсэг төгсөж байна.********************* -->
+
+                    <!-- ************* Онцлох мэдээ хэсэг эхэлж байна.********************* -->
+                    <div class="middleNews">
+                        <div class=".container">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="highlightsNews">
+                                        <!-- --------  Swiper  Navigation  --------- -->
+                                        <div class="slider">
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="image/хотын-захиргаа-1-810x500.jpg">
+                                                        <div class="caption">
+                                                            <h6>97 тэрбум төгрөгөөр “боссон” хотын захиргаа үнэгүйдэв
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="image/4.Хөвсгөл-Ханх-сум-720x500.jpg">
+                                                        <div class="caption">
+                                                            <h6>Барилгын зураг төсөлд хяналт хийж, эрүүл ахуйн
+                                                                дүгнэлт
+                                                                гаргах тухай
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <!-- Add Arrows -->
+                                                <div class="swiper-button-next swiper-button-white"></div>
+                                                <div class="swiper-button-prev swiper-button-white"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Swiper -ын js -->
+                                        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                                        <script>
+                                            var swiper = new Swiper('.slider .swiper-container', {
+                                                spaceBetween: 30,
+                                                centeredSlides: true,
+                                                autoplay: {
+                                                    delay: 10000,
+                                                    disableOnInteraction: false,
+                                                },
+                                                pagination: {
+                                                    el: '.swiper-pagination',
+                                                    clickable: true,
+                                                },
+                                                navigation: {
+                                                    nextEl: '.swiper-button-next',
+                                                    prevEl: '.swiper-button-prev',
+                                                },
+                                                loop: true,
+
+
+
+                                            });
+                                        </script>
+
+                                        <!-- ----------------------slider дуусаж байна ------------->
+
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="slideRigth">
+                                        <a href="#">
+                                            <img src="image/зэвсэгт хүчний 100.jpg">
+                                        </a>
+                                    </div>
+                                    <h6>
+                                        <a href="#">
+                                            ЗЭВСЭГТ ХҮЧНИЙ 100 ЖИЛ, “МОНГОЛ ЦЭРГИЙН ӨДӨР”-ӨӨР “ЭХ ОРНЫ ДУУДЛАГА”
+                                            ТЭРГҮҮТЭЙ ХӨТӨЛБӨР ҮЗЭГЧДЭД ХҮРНЭ
+
+                                        </a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ************* Онцлох мэдээ хэсэг төгсөж байна.********************* -->
+
+                    <!-- ************* bottom container хэсэг эхэлж байна.********************* -->
+                    <div class="bottomNewsContainer">
+                        <div class=".container">
+                            <div class="row">
+                                <!-- ***********newsContainer эхэлж байна. ************* -->
+                                <div class="newsContainer col-md-8 col-sm-8 news">
+                                    <div class="news">
+                                        <!-- ----------------------Мэдээ хэсэг эхэлж байна. ------------------------- -->
+                                        <div class="container">
+                                            <h4 class="title">Мэдээ мэдэээлэл</h4>
+                                            <div class="title1"></div>
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4">
+                                                    <div class="n1">
+                                                        <div class="n3-image">
+                                                            <a href="#">
+                                                                <img src="image/bolows.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                        <h6><a href="#">Боловсролын байгууллагуудын бэлтгэл бэлэн
+                                                                байдалд хяналт </a></h6>
+                                                        <!-- <div class="date">2021.03.12</div> -->
+                                                        <p>
+                                                            Үргэлж сонин содон жиргээ, мэдэгдлээрээ олныг
+                                                            гайхшруулдаг
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4">
+                                                    <div class="n1">
+                                                        <div class="n3-image">
+                                                            <a href="#">
+                                                                <img src="image/zasag0303.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <h6><a href="#">МОНГОЛ УЛС ХИЛЭЭ НЭЭХЭЭР ТӨЛӨВЛӨЖ БАЙНА </a>
+                                                        </h6>
+                                                        <!-- <div class="date">2021.03.12</div> -->
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+
+                                                        </p>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-4">
+                                                    <div class="n1">
+                                                        <div class="n3-image">
+                                                            <a href="#">
+                                                                <img src="image/olloo_mn_1568015937_olloo.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <h6><a href="#">УДИРДАХ АЛБАН ТУШААЛЫН 1, ГҮЙЦЭТГЭХ АЛБАН
+                                                                ТУШААЛЫН 15</a></h6>
+                                                        <!-- <div class="date">2021.03.12</div> -->
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Perferendis
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ----------------------Мэдээ хэсэг дуусаж байна. -------------------------  -->
+                                    </div>
+                                    <!--  ----------------------Мэдээ хэсэг гадна талын news div дуусаж байна. ------------------------- -->
+                                    <!-- --------------------------Сайтын мэдээлэл хэсэг эхэлж байна---------------------------------- -->
+                                    <div class="siteNews">
+                                        <div class="container">
+                                            <h6 class="title">Сайтын мэдээ</h6>
+                                            <div class="title1"></div>
+                                            <!-- ------------------сайтын мэдээ1 эхлэл----------------------------- -->
+                                            <div class="row siteRow">
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img
+                                                                    src="image/14,Lovely-Happy-Family-Illustration-Made-with-PosterMyWall-4.jpg">
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a>
+                                                                Хүүхдэд ээлтэй байгууллага болох зорилт
+                                                                дэвшүүлэн
+                                                                ажиллаж байна.
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img
+                                                                    src="image/skynews-graphic-vaccine-astrazeneca_5290048-810x500.jpg">
+
+                                                            </a>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a>
+                                                                Хөнгөн хэлбэрээр өвчилсөн иргэдийг гэрт нь тусгаарлана
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img src="image/elon-musk-cnn-2.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a>
+                                                                ИЛОН МАСК ӨӨРИЙГӨӨ “ТЕХНОЛОГИЙН ХААН” ХЭМЭЭН ӨРГӨМЖИЛЖЭЭ
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img src="image/3.jpg">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a>
+                                                                Бразилчууд хятад вакцинаас татгалзаж байна
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- -----------------сайтын мэдээ1 төгсөл------------------------------ -->
+                                            <!-- -----------------сайтын мэдээ2 эхлэл------------------------------ -->
+                                            <div class="row siteRow">
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img src="image/4.Хөвсгөл-Ханх-сум-720x500.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a href="#">МОНГОЛ УЛС ХИЛЭЭ НЭЭХЭЭР ТӨЛӨВЛӨЖ БАЙНА
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img src="image/5.News611-1-810x500.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a href="#">МОНГОЛ УЛС ХИЛЭЭ НЭЭХЭЭР ТӨЛӨВЛӨЖ БАЙНА
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img src="image/6_n.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a href="#">МОНГОЛ УЛС ХИЛЭЭ НЭЭХЭЭР ТӨЛӨВЛӨЖ БАЙНА
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img src="image/7.КОВИД.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a href="#">МОНГОЛ УЛС ХИЛЭЭ НЭЭХЭЭР ТӨЛӨВЛӨЖ БАЙНА
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- -------------------сайтын мэдээ2 төгсөл---------------------------- -->
+                                            <!-- ----------------сайтын мэдээ3 эхлэл------------------------------- -->
+                                            <div class="row siteRow">
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img src="image/13.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a href="#">МОНГОЛ УЛС ХИЛЭЭ НЭЭХЭЭР ТӨЛӨВЛӨЖ БАЙНА
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img src="image/10.BUILD.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a href="#">МОНГОЛ УЛС ХИЛЭЭ НЭЭХЭЭР ТӨЛӨВЛӨЖ БАЙНА
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img
+                                                                    src="image/11.137238010_2588704598089133_556445723903848706_n.jpg">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a href="#">МОНГОЛ УЛС ХИЛЭЭ НЭЭХЭЭР ТӨЛӨВЛӨЖ БАЙНА
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3">
+                                                    <div class="n4">
+                                                        <div class="n4-image">
+                                                            <a href="#">
+                                                                <img src="image/12.55557737_401.jpg">
+
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="siteNewsTitle">
+                                                        <h6><a href="#">МОНГОЛ УЛС ХИЛЭЭ НЭЭХЭЭР ТӨЛӨВЛӨЖ БАЙНА
+                                                            </a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- -------------------сайтын мэдээ3 төгсөл---------------------------- -->
+                                        </div>
+                                    </div>
+                                    <!-- --------------------------Сайтын мэдээлэл хэсэг төгсөж байна---------------------------------- -->
+
+                                </div>
+                                <!-- ***********сайтын мэдээ - newsContainer төгссөн ************* -->
+                                <!-- ***********Их мэдээ populerNewsContainer эхэлж байна ************* -->
+                                <div class="populerNews col-md-4 col-sm-4 ">
+                                    <div class="popularNewsContainer">
+                                        <div class=".container">
+                                            <div class="row">
+                                                <div class="newNews col-md-6 col-sm-6">
+                                                    <h5>Их мэдээ</h5>
+                                                </div>
+                                                <div class="newNews col-md-6 col-sm-6">
+                                                    <h5>Шинэ мэдээ</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=".container">
+                                            <div class="row">
+                                                <!-- ----------------------Их мэдээ эхэлж байна -------------------------- -->
+                                                <div class="populerNews col-md-6 col-sm-6">
+                                                    <!-- -Их мэдээ эхэлж байна -->
+                                                    <div class="n1-1-image">
+                                                        <a href="#">
+                                                            <img src="image/13.jpg">
+                                                        </a>
+                                                        <h6><a href="#"></a>UFC: ДАНА УАЙТЫН "БҮГДИЙГ НЬ" ТӨЛӨВЛӨГӨӨ
+                                                        </h6>
+                                                    </div>
+                                                    <div class="n1-1-image">
+                                                        <a href="#">
+                                                            <img src="image/pexels.jpg">
+                                                        </a>
+                                                        <h6><a href="#"></a>UFC: ДАНА УАЙТЫН "БҮГДИЙГ НЬ" ТӨЛӨВЛӨГӨӨ
+                                                        </h6>
+                                                    </div>
+                                                    <div class="n1-1-image">
+                                                        <a href="#">
+                                                            <img src="image/1-1-3.jpg">
+                                                        </a>
+                                                        <h6><a href="#"></a>UFC: ДАНА УАЙТЫН "БҮГДИЙГ НЬ" ТӨЛӨВЛӨГӨӨ
+                                                        </h6>
+                                                    </div>
+                                                    <div class="n1-1-image">
+                                                        <a href="#">
+                                                            <img src="image/1-1-4.jpg">
+                                                        </a>
+                                                        <h6><a href="#"></a>UFC: ДАНА УАЙТЫН "БҮГДИЙГ НЬ" ТӨЛӨВЛӨГӨӨ
+                                                        </h6>
+                                                    </div>
+                                                    <div class="n1-1-image">
+                                                        <a href="#">
+                                                            <img src="image/1-1-5УИХ-анхдугаар-чуулган-35-810x500.jpg">
+                                                        </a>
+                                                        <h6><a href="#"></a>UFC: ДАНА УАЙТЫН "БҮГДИЙГ НЬ" ТӨЛӨВЛӨГӨӨ
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <!-- ----------------------Их мэдээ дуусаж байна -------------------------- -->
+                                                <!-- ----------------------Шинэ мэдээ эхэлж байна -------------------------- -->
+                                                <div class="newNews col-md-6 col-sm-6">
+                                                    <!--  Шинэ мэдээ эхэлж байна-->
+                                                    <div class="n1-2-image">
+                                                        <a href="#">
+                                                            <img src="image/12.55557737_401.jpg">
+                                                        </a>
+                                                        <h6> <a>Иргэн та угаартах эрсдэлээс урьдчилан сэргийлээрэй</a>
+                                                        </h6>
+                                                    </div>
+                                                    <div class="n1-2-image">
+                                                        <a href="#">
+                                                            <img src="image/1-2-1угаар-постер.jpg">
+                                                        </a>
+                                                        <h6> <a>Иргэн та угаартах эрсдэлээс урьдчилан сэргийлээрэй</a>
+                                                        </h6>
+                                                    </div>
+                                                    <div class="n1-2-image">
+                                                        <a href="#">
+                                                            <img src="image/1-2-3сунгаа-2-810x500 (1).jpg">
+                                                        </a>
+                                                        <h6> <a>Иргэн та угаартах эрсдэлээс урьдчилан сэргийлээрэй</a>
+                                                        </h6>
+                                                    </div>
+                                                    <div class="n1-2-image">
+                                                        <a href="#">
+                                                            <img src="image/1-2-4header_image_2OapNN9.jpeg">
+                                                        </a>
+                                                        <h6> <a>Иргэн та угаартах эрсдэлээс урьдчилан сэргийлээрэй</a>
+                                                        </h6>
+                                                    </div>
+                                                    <div class="n1-2-image">
+                                                        <a href="#">
+                                                            <img src="image/12 Б.Саранчимэг-810x500.jpg">
+                                                        </a>
+                                                        <h6> <a>Иргэн та угаартах эрсдэлээс урьдчилан сэргийлээрэй</a>
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <!-- ----------------------Шинэ мэдээ дуусаж байна -------------------------- -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- *********** Их мэдээ - populerNewsContainer төгссөн ************* -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ************* bottom container хэсэг эхэлж байна.********************* -->
+
+                    <!-- ************* footer хэсэг эхэлж байна.********************* -->
+
+                    <div class=".container">
+                        <div class="row footer">
+                            <div class="col-md-4 col-sm-4 ">
+                                <div class="bairshil">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>"Монгол улс, Улаанбаатар, Сүхбаатар дүүрэг, Бага тойруу, Сүхбаатар талбай 9/3,
+                                        99999 тауер, 30 давхарт </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 ">
+                                <div class="address">
+                                    <div>
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <p>info@news-9999.mn</p>
+                                        <p>info@9999.mn</p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 ">
+                                <div class="phone">
+                                    <i class="fas fa-phone"></i>
+                                    <p class="p2">
+                                        99110000
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="zuraas"></div>
+                            <p class="freedom"> Бүх эрх хуулиар хамгаалагдсан </p>
+                        </div>
+                    </div>
+
+                    <!-- ************* footerхэсэг төгсөж байна.********************* -->
+
+                </div>
+                <!-- main div төгссөн хэсэг -->
+            </div>
+            <!-- row төгссөн хэсэг шүү -->
+        </div>
+        <!-- container төгссөн хэсэг шүү -->
+
+        <!-- bootstrap jqery -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+            integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+            crossorigin="anonymous"></script>
+        <!-- bootstrap javascript  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+            integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
